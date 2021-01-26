@@ -361,7 +361,7 @@
             const arr31 = [100, 200, 300, 400, 500];
 
             const sum1 = arr31.reduce((prev, current) => {
-                return prev + currnet;
+                return prev + current;
             });
             const sum2 = arr31.reduce((prev, current) => prev + current);
 
@@ -384,7 +384,7 @@
         }
 
         // ***** 객체 *****
-        //35. 객체
+        //35. 객체(객체 선언하기)
         {
             const obj1 = new Object();
             obj1[0] = 100;
@@ -396,7 +396,7 @@
             document.write(obj1[1], "<br>");
             document.write(obj1[2], "<br><br><br>");
         }
-        //36. 객체
+        //36. 객체(객체 선언하기)
         {
             const obj2 = new Object();
             obj2.a = 100;
@@ -408,7 +408,7 @@
             document.write(obj2.b, "<br>");
             document.write(obj2.c, "<br><br><br>");
         }
-        //37. 객체
+        //37. 객체(객체 선언하기)
         {
             const obj3 = {};
             obj3.a = 100;
@@ -420,7 +420,7 @@
             document.write(obj3.b, "<br>");
             document.write(obj3.c, "<br><br><br>");
         }
-        //38. 객체
+        //38. 객체(객체 선언하기)
         {
             const obj4 = {
                 a: 100,
@@ -440,8 +440,8 @@
                     b: 200
                 },
                 {
-                    c: 300,
-                    d: 400
+                    c: "javascript",
+                    d: "jquery"
                 }
             ];
             document.write("*** 39. 객체 *** <br>");
@@ -450,7 +450,6 @@
             document.write(obj5[1].c, "<br>");
             document.write(obj5[1].d, "<br><br><br>");
         }
-        
         //40. 객체(객체 속에 배열)
         {
             const obj6 = {
@@ -463,6 +462,22 @@
             document.write(obj6.b[0], "<br>");
             document.write(obj6.b[1], "<br>");
             document.write(obj6.c, "<br><br><br>");
+        }
+        //43. 객체(객체 속에 변수)
+        {
+            const a = 100;
+            const b = 200;
+            const c = "javascript";
+
+            const obj9 = {
+                a,
+                b,
+                c,
+            }
+            document.write("*** 43. 객체 리터럴 *** <br>");
+            document.write(obj9.a, "<br>");
+            document.write(obj9.b, "<br>");
+            document.write(obj9.c, "<br><br><br>");
         }
 
         //41. 객체(객체 속에 함수)
@@ -508,32 +523,7 @@
             result2.c();
             document.write("<br><br><br>");
         }
-        //43. 객체 리터럴
-        {
-            const name1 = "array";
-            const name2 = "object";
-
-            const obj9 = {
-                name1,
-                name2,
-            }
-            document.write("*** 43. 객체 리터럴 *** <br>");
-            document.write(obj9.name1, "<br>");
-            document.write(obj9.name2, "<br><br><br>");
-        }
-        //44. 객체 리터럴
-        {
-            const obj10 = {
-                name1 : "array",
-                name2 : "object",
-            }
-            const name1 = obj10.name1;
-            const name2 = obj10.name2;
-
-            document.write("*** 44. 객체 리터럴 *** <br>");
-            document.write(name1, "<br>");
-            document.write(name2, "<br><br><br>");
-        }
+        
         //45. 객체 구조 분해 할당
         {
             const obj11 =  {
@@ -577,7 +567,19 @@
         }
         //48. 객체 요소 불러오기
 
+        //44. 객체 불러오기
+        {
+            const obj10 = {
+                name1 : "array",
+                name2 : "object",
+            }
+            const name1 = obj10.name1;
+            const name2 = obj10.name2;
 
+            document.write("*** 44. 객체 리터럴 *** <br>");
+            document.write(name1, "<br>");
+            document.write(name2, "<br><br><br>");
+        }
 
 
 
