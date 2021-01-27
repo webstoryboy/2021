@@ -75,5 +75,29 @@
     font-family: 'Rajdhani', 'Chosunilbo_myungjo', sans-serif;
 }
 
-
-body {background: #000;}
+/* mainCont */
+#mainCont {
+    height: 100vh; 
+    background-color: #000; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 82px;
+}
+.main-text {
+    color: #fff;
+    font-size: 150px;
+    line-height: 130px;
+}
+.main-text div {
+    background: #ccc;
+    margin-bottom: 10px;
+    font-family: "Saol Display Regular";
+    padding-top: 23px;
+}
+.main-text.white {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+}
