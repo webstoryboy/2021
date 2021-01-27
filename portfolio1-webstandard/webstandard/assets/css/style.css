@@ -87,17 +87,16 @@
 }
 .main-text {
     color: #fff;
-    font-size: 150px;
+    font-size: 180px;
     line-height: 130px;
 }
 .main-text div {
-    background: #ccc;
     margin-bottom: 10px;
     font-family: "Saol Display Regular";
     padding-top: 23px;
 }
-.main-text.white {
+/* .main-text .white {
     background-color: #fff;
     color: #000;
     display: inline-block;
-}
+} */
