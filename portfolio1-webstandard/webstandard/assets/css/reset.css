@@ -80,12 +80,28 @@ input[type="submit"] {
 }
 
 /* 스타일 초기화 */
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6 {
+    font-weight: normal;
+} 
 ul {
     list-style: none;
 }
 em {
     font-style: normal;
 }
+strong {
+    font-weight: normal;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
 
 /* 스킵메뉴 */
 #skip a {
