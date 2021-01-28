@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
+    z-index: 10000;
 }
 #header .port {
     flex: 1 1 30%;
@@ -37,6 +38,8 @@
     text-align: center;
     font-family: 'Rajdhani';
     padding: 10px 10px 10px 50px;
+    font-size: 16px;
+    line-height: 1;
 }
 #header .port em a::before {
     content: '';
@@ -80,7 +83,32 @@
     display: inline-block;
     padding: 8px 5px 5px 5px;
     font-family: 'Rajdhani', 'Chosunilbo_myungjo', sans-serif;
+    font-size: 16px;
+    line-height: 1;
 }
+#header.white {
+    background-color: #F0EEEB;
+    border-bottom: 1px solid #DAD8D1;
+}
+#header.white .port em {
+    border-right: 1px solid #DAD8D1;
+}
+#header.white .port em a {
+    color: #000;
+}
+#header.white .logo a {
+    color: #000;
+}
+#header.white .nav li a {
+    color: #000;
+}
+#header.white .port em a::before {
+    background: #000;
+}
+#header.white .port em a::after {
+    background: #000;
+}
+
 
 /* mainCont */
 #mainCont {
@@ -120,9 +148,6 @@
     flex: 0 0 32%;
     margin-bottom: 2%;
 }
-.port-cont .port .port-img {
-
-}
 .port-cont .port .port-text {
     padding: 35px;
     background: #151517;
@@ -138,6 +163,248 @@
     padding-top: 10px;
 }
 
+/* aboutCont */
+#aboutCont {
+    background-color: #F0EEEB;
+    padding-bottom: 200px;
+}
+.about-cont {}
+.about-cont .about {
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-cont .about.center .about-img {
+    flex: 0 0 100%;
+}
+.about-cont .about.center .about-txt {
+    flex: 0 0 100%;
+}
+.about-cont .about.center .about-txt h2 {
+    margin-top: 50px;
+}
+.about-cont .about.left .about-img {
+    flex: 0 0 64%;
+}
+.about-cont .about.left .about-txt {
+    flex: 0 0 30%;
+}
+.about-cont .about.right {
+    flex-direction: row-reverse;
+}
+.about-cont .about.right .about-img {
+    flex: 0 0 54%;
+}
+.about-cont .about.right .about-txt {
+    flex: 0 0 40%;
+}
+
+.about-cont .about .about-img {}
+.about-cont .about .about-txt {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 18px;
+}
+.about-cont .about .about-txt h2 {
+    margin: 0 0 40px;
+    font-size: 26px;
+}
+.about-cont .about .about-txt p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* referCont */
+#referCont {
+    background-color: #F0EEEB;
+}
+.refer-cont {
+    padding-bottom: 200px;
+}
+.refer-cont .refer-title {}
+.refer-cont .refer-title li {
+    display: inline;
+    font-family: 'Rajdhani';
+    
+}
+.refer-cont .refer-title li a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.refer-cont .refer-title li.active a {
+    background: #000;
+    color: #fff;
+}
+.refer-cont .refer-table {
+    border-bottom: 2px solid #000;
+}
+.refer-cont .refer-table li {
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #000;
+    position: relative;
+    transition: all 0.3s;
+}
+.refer-cont .refer-table li:hover {
+    background: rgba(0,0,0,0.081);
+}
+.refer-cont .refer-table li span {
+    display: inline-block;
+    padding: 21px 0;
+    font-size: 16px;
+    font-family: 'S-CoreDream-3Light';
+    box-sizing: border-box;
+}
+.refer-cont .refer-table li span.alpha {
+    position: absolute; left: 0; top: 0;
+}
+.refer-cont .refer-table li span.attr {
+    padding-left: 10%;
+    width: 35%;
+}
+.refer-cont .refer-table li span.desc {
+    width: 64.5%;
+}
+
+/* youtubeCont */
+#youtubeCont {
+    background-color: #F0EEEB;
+}
+
+/* scriptCont */
+#scriptCont {
+    background-color: #F0EEEB;
+}
+
+/* contactCont */
+#contactCont {
+    height: 100vh;
+    background-color: #000;
+}
+.contact-cont {
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.contact-cont div {
+    font-size: 100px;
+    font-family: "Saol Display Regular";
+    font-weight: normal;
+    padding-top: 1.6vw;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 180px;
+    line-height: 130px;
+}
+/* contact-info */
+#contactFooter {
+    position: fixed; 
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 82px;
+    border-top: 1px solid #2E2E30; 
+    color: #fff; 
+    background: #000;
+}
+.contact-info {
+    font-family: 'Rajdhani';
+    
+}
+.contact-info > div {
+    float: left; height: 82px; 
+    text-align: center; font-weight: 300; 
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+.contact-info a {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+}
+.contact-info > div:nth-child(1){ width: 25%; border-right: 1px solid #2E2E30;}
+.contact-info > div:nth-child(2){ width: 25%; border-right: 1px solid #2E2E30;}
+.contact-info > div:nth-child(3){ width: 50%;}
+.contact-info > div ul {display: inline;}
+.contact-info > div li {display: inline;}
+.contact-info > div li a {
+    padding: 0 1rem;
+}
+.contact-info > div span:nth-child(1) {margin-right: 1.5rem; color: #787878;}
+
+
+/* signUpCont */
+#signUpCont {
+    height: 100vh;
+    background: #000;
+}
+.signUpCont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    font-family: 'Chosunilbo_myungjo';
+    color: #fff;
+}
+.signUpCont h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.signUpCont h1 strong {
+    font-weight: normal;
+    display: block;
+}
+.signUpCont .input-text {
+    border: 1px solid #fff;
+    background: #000;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Chosunilbo_myungjo';
+}
+.signUpCont .signUpBtn {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    margin: 10px 0;
+    font-family: 'Chosunilbo_myungjo';
+}
+.signUpCont .signDesc {
+    text-align: center;
+}
+.signUpCont .signDesc a {
+    text-decoration: underline
+}
+.signUpCont .birth {
+    display: flex;
+    justify-content: space-between;
+}
+.signUpCont .birth > div {
+    flex: 0 0 30%;
+    text-align: center
+}
+.signUpCont .birth > div label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.signUpCont .birth > div select {
+    display: block;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-family: 'Chosunilbo_myungjo';
+}
 
 /* title-wrap : 공통 */
 .title-wrap {
@@ -153,6 +420,10 @@
 .title-wrap h1 strong {
     display: block;
 }
+.title-wrap.white h1 {
+    color: #000;
+}
+
 
 /* footer : 공통 */
 #footer {

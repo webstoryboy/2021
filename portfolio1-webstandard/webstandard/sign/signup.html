@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹스토리보이 포트폴리오 사이트입니다.">
+    <meta name="keywords" content="포트폴리오, 웹표준, 웹접근성, 사이트만들기, 포트폴리오, 웹스토리보이">
+    <title>Webstoryboy Portfolio</title>
+
+    <!-- meta -->
+    <meta property="og:image" content=""> 
+    <meta property="og:description" content="웹스토리보이 포트폴리오 사이트입니다."/> 
+    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:title" content="Webstoryboy Portfolio"> 
+    <meta name="twitter:url" content=""> 
+    <meta name="twitter:image" content=""> 
+    <meta name="twitter:description" content="웹스토리보이 포트폴리오 사이트입니다."/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="#"/>   
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#"/> 
+    <link rel="apple-touch-icon-precomposed" href="#"/>  
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+</head>
+<body>
+
+    <!-- skip -->
+    <div id="skip">
+        <a href="#portCont">회원가입 바로가기</a>
+    </div>
+    <!-- //skip -->
+    
+    <!-- header -->
+    <header id="header">
+        <div class="port"><em><a href="../sub/portfolio.html">port</a></em></div>
+        <div class="logo"><a href="../main/index.html">webstroyboy</a></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../sign/signup.html">회원가입</a></li>
+                <li><a href="../sign/login.html">로그인</a></li>
+                <li><a href="../board/board.html">게시판</a></li>
+            </ul>
+            <ul>
+                <li><a href="../sub/about.html">About</a></li>
+                <li><a href="../sub/reference.html">Reference</a></li>
+                <li><a href="../sub/youtube.html">Youtube</a></li>
+                <li><a href="../sub/script.html">Script</a></li>
+                <li><a href="../sub/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- signUpCont -->
+    <main>
+        <section id="signUpCont">
+            <div class="signUpCont">
+                <h1><strong>webstoryboy</strong> 사이트에 오신걸 환영합니다.</h1>
+                <form name="signUp" method="post" action="signUpSave.php">
+                    <div>
+                        <label for="userEmail" class="sr-only">이메일</label> 
+                        <input type="email" name="userEmail" id="userEmail" class="input-text" placeholder="이메일을 적어주세요." required autofocus>
+                    </div>
+                    <div>
+                        <label for="userName" class="sr-only">이름</label>
+                        <input type="text" name="userName" id="userName" class="input-text" placeholder="이름을 적어주세요." required>
+                    </div>
+                    <div>
+                        <label for="userNickName" class="sr-only">닉네임</label>
+                        <input type="text" name="userNickName" id="userNickName" class="input-text" placeholder="활동에 필요한 이름을 적어주세요" required>
+                    </div>
+                    <div>
+                        <label for="userPw" class="sr-only">패스워드</label>
+                        <input type="password" name="userPw" id="userPw" class="input-text" placeholder="패스워드" required>
+                    </div>
+                    
+                    <div class="birth">
+                        <div>
+                            <label for="birthYear">년도</label>
+                            <select id="birthYear" name="birthYear" required>
+                                <option value='2020'>2020</option>                             
+                            </select>
+                        </div>
+                        <div>
+                            <label for="birthMonth">생일</label>
+                            <select id="birthMonth" name="birthMonth" required>
+                                <option value='1'>1</option>          
+                            </select>
+                        </div>
+                        <div>
+                            <label for="birthDay">일</label>
+                            <select id="birthDay" name="birthDay" required>
+                                <option value='1'>1</option>             
+                            </select>
+                        </div>
+                    </div>
+                    <button class="signUpBtn" type="submit" value="회원가입">회원가입</button>
+                    <p class="signDesc">로그인을 원하면? <a href="../sign/login.html">로그인</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- //signUpCont -->
+
+</body>
+</html>
