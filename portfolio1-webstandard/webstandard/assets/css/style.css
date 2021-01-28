@@ -406,6 +406,115 @@
     font-family: 'Chosunilbo_myungjo';
 }
 
+
+/* boardCont */
+#boardCont {
+    background-color: #F0EEEB;
+}
+.board-title {
+    padding: 200px 0 50px 0;
+    font-size: 30px;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont {
+    padding-bottom: 200px;
+}
+.board-cont .table-search {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.board-cont .table-search .form-search {
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 10px 16px 8px 16px;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 5px;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont .table-search .form-select {
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 10px 16px 8px 16px;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 5px;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont .table-search .form-btn {
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 10px 16px 8px 16px;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 5px;
+    background: #000;
+    color: #fff;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont .table-search .btn-write {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    vertical-align: 1px;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont .table-board table {
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 20px;
+    font-family: 'S-CoreDream-3Light';
+}
+.board-cont .table-board .table td,
+.board-cont .table-board .table th {
+    border-top: 1px solid #000;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 16px;
+}
+.board-cont .table-board .table th {
+    background: rgba(0, 0, 0, 0.04);
+}
+.board-cont .table-board .table td:nth-child(2) {
+    text-align: left;
+}
+.board-cont .table-page .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.board-cont .table-page .pagination li.active a {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.board-cont .table-page .pagination li a {
+    display: block;
+    padding: .8rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    border: 1px solid #bebebe;
+}
+.board-cont .btn-list {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: auto;
+    float: right;
+    margin-top: 20px;
+}
+
 /* title-wrap : 공통 */
 .title-wrap {
     padding: 300px 0 250px 0;

@@ -101,6 +101,13 @@ img {
     vertical-align: top;
     width: 100%;
 }
+/* table */
+table {
+    border: 0;
+    border-collapse: collaspe;
+    border-spacing: 0;
+    width: 100%;
+}
 
 /* 간격 설정 */
 .mt0 {margin-top: 0 !important;}
