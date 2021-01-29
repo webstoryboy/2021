@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 기본 값 및 변수 선언하기 */
+:root {
+    font-size: 16px;
+
+    --font-sub: 'Rajdhani';
+    --font-title: 'Playfair Display';
+    --font-main: 'Saol Display Regular';
+    --font-kor: 'Chosunilbo_myungjo';
+    
+    --main-white: #F0EEEB;
+    --border-white: #DAD8D1;
+    --font-white: #000;
+
+    --main-black: #000;
+    --border-black: #2e2e30;
+    --font-black: #fff;
+}

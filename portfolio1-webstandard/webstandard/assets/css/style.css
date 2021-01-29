@@ -124,7 +124,7 @@
 .main-cont {
     color: #fff;
     font-size: 180px;
-    line-height: 130px;
+    line-height: .75;
 }
 .main-cont div {
     margin-bottom: 10px;

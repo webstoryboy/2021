@@ -1,0 +1,51 @@
+/* media */
+:root {
+    font-size: 16px;
+}
+
+/* 피시 */
+@media (max-width: 1400px){
+
+}
+
+/* 노트북 */
+@media (max-width: 1200px){
+
+}
+
+/* 타블렛 ipad pro */
+@media (max-width: 1024px){
+    :root {
+        font-size: 14px;
+    }
+
+    /* header */
+    #header .nav ul {display: none}
+}
+
+/* 타블렛 ipad */
+@media (max-width: 768px){
+    :root {
+        font-size: 12px;
+    }
+
+    /* header */
+    #header .port em {display: none}
+}
+
+/* 핸드폰 iPhone */
+@media (max-width: 480px){
+    
+}
+
+/* 핸드폰 iPhone5 */
+@media (max-width: 320px){
+    :root {
+        font-size: 10px;
+    }
+}
+
+/* 핸드폰 Galaxy fold */
+@media (max-width: 280px){
+    
+}

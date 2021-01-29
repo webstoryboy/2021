@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/* 변수 선언하기 */
-:root {
-    --main-bg: #000;
-    --main-bg: #F0EEEB;
-
-}
-
-
 /* border-box 초기화 */
 *,
 *:before,
