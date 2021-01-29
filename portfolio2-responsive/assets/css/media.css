@@ -20,7 +20,9 @@
     }
 
     /* header */
-    #header .nav ul {display: none}
+    #header .nav {display: none}
+    #header .port {display: none}
+    #header .logo {margin: 1rem}
 }
 
 /* 타블렛 ipad */
@@ -28,9 +30,6 @@
     :root {
         font-size: 12px;
     }
-
-    /* header */
-    #header .port em {display: none}
 }
 
 /* 핸드폰 iPhone */
