@@ -261,7 +261,7 @@
             const arr20 = [100, 200, 300, 400, 500];
             const arr21 = [600, 700, 800, 900, 1000];
 
-            document.write("*** 23 배열 concat *** <br>");
+            document.write("*** 23. 배열 concat *** <br>");
             document.write(arr20.concat(arr21), "<br><br>");
         }
         //24. 배열 메서드 shift() : 배열의 첫 번째 요소를 제거할 때
@@ -463,7 +463,7 @@
             document.write(obj6.b[1], "<br>");
             document.write(obj6.c, "<br><br><br>");
         }
-        //43. 객체(객체 속에 변수)
+        //41. 객체(객체 속에 변수)
         {
             const a = 100;
             const b = 200;
@@ -474,13 +474,12 @@
                 b,
                 c,
             }
-            document.write("*** 43. 객체 리터럴 *** <br>");
+            document.write("*** 41. 객체 *** <br>");
             document.write(obj9.a, "<br>");
             document.write(obj9.b, "<br>");
             document.write(obj9.c, "<br><br><br>");
         }
-
-        //41. 객체(객체 속에 함수)
+        //42. 객체(객체 속에 함수)
         {
             const obj7 = {
                 a: 100,
@@ -493,7 +492,7 @@
                     document.write(this.c + "가 실행되었습니다.<br>");
                 }
             }
-            document.write("*** 41. 객체 *** <br>");
+            document.write("*** 42. 객체 *** <br>");
             document.write(obj7.a, "<br>");
             document.write(obj7.b[0], "<br>");
             document.write(obj7.b[1], "<br>");
@@ -502,7 +501,7 @@
             obj7.e();
             document.write("<br><br>");
         }
-        //42. 객체 생성자 함수
+        //43. 객체 생성자 함수
         {
             function obj8(a, b){
                 this.a = a;
@@ -514,7 +513,7 @@
             const result1 = new obj8(100, 200);
             const result2 = new obj8("javascript", "react");
 
-            document.write("*** 42. 객체 생성자 함수 *** <br>");
+            document.write("*** 43. 객체 생성자 함수 *** <br>");
             document.write(result1.a, "<br>");
             document.write(result1.b, "<br>");
             document.write(result2.a, "<br>");
@@ -523,8 +522,8 @@
             result2.c();
             document.write("<br><br><br>");
         }
-        
-        //45. 객체 구조 분해 할당
+        //구조 분해 할당 구문은 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식입니다.
+        //44. 객체 구조 분해 할당(기본 할당)
         {
             const obj11 =  {
                 a : "100",
@@ -533,12 +532,12 @@
             }
             const { a, b, c } = obj11;
 
-            document.write("*** 45. 객체 구조 분해 할당 *** <br>");
+            document.write("*** 44. 객체 구조 분해 할당 *** <br>");
             document.write(a, "<br>");
             document.write(b, "<br>");
             document.write(c, "<br><br><br>");
         }
-        //46. 객체 구조 분해 할당
+        //45. 객체 구조 분해 할당(새로운 변수 이름으로 할당)
         {
             const obj12 =  {
                 a : "100",
@@ -547,57 +546,682 @@
             }
             const { a: name1, b: name2, c: name3 } = obj12;
 
-            document.write("*** 46. 객체 구조 분해 할당 *** <br>");
+            document.write("*** 45. 객체 구조 분해 할당 *** <br>");
             document.write(name1, "<br>");
             document.write(name2, "<br>");
             document.write(name3, "<br><br><br>");
         }
-        //47. 객체 요소 값 확인하기
+        //46. 객체 구조 분해 할당(선언 없는 할당)
         {
-            const obj13 =  {
+            const { a = "100", b = "200", c = "javascript" } = { a: "300" }
+
+            document.write("*** 46. 객체 구조 분해 할당 *** <br>");
+            document.write(a, "<br>");
+            document.write(b, "<br>");
+            document.write(c, "<br><br><br>");
+        }
+        //47. 객체 불러오기(keys, values, entries)
+        {
+            const obj14 =  {
                 a : "100",
                 b : "200",
                 c : "javascript"
             }
 
-            document.write("*** 46. 객체 요소 값 확인하기 *** <br>");
-            document.write(Object.keys(obj13), "<br>");
-            document.write(Object.values(obj13), "<br>");
-            document.write(Object.entries(obj13), "<br><br><br>");
+            document.write("*** 47. 객체 요소 값 확인하기 *** <br>");
+            document.write(Object.keys(obj14), "<br>");
+            document.write(Object.values(obj14), "<br>");
+            document.write(Object.entries(obj14), "<br><br><br>");
         }
-        //48. 객체 요소 불러오기
-
-        //44. 객체 불러오기
+        //48. 객체 불러오기
         {
-            const obj10 = {
-                name1 : "array",
-                name2 : "object",
+            const obj15 = {
+                a : 100,
+                b : 200,
+                c : "javascript",
             }
-            const name1 = obj10.name1;
-            const name2 = obj10.name2;
+            const name1 = obj15.a;
+            const name2 = obj15.b;
+            const name3 = obj15.c;
 
-            document.write("*** 44. 객체 리터럴 *** <br>");
+            document.write("*** 48. 객체 불러오기 *** <br>");
             document.write(name1, "<br>");
-            document.write(name2, "<br><br><br>");
+            document.write(name2, "<br>");
+            document.write(name3, "<br><br><br>");
         }
-
-
-
-
-
-
-
-
-        //객체 불러오기(map)
+        //49. 객체 불러오기(for in)
         {
-            const arr = [
-                { name:"Tom", age: 17 },
-                { name:"Tom", age: 17 },
-                { name:"Tom", age: 17 },
-            ]
-            var names = arr.map(person => person.name);
-            document.write(names)
+            const obj16 = {
+                a: 100, 
+                b: 200, 
+                c: "javascript"
+            }
+
+            document.write("*** 49. 객체 불러오기 *** <br>");
+            for(let prop in obj16){
+                document.write(obj16[prop], "<br>");
+            }  
+            document.write("<br><br>");
         }
+        //50. 객체 불러오기(배열 속에 객체 map)
+        {
+            const obj17 = [
+                { a: 100, b: 200, c: "javascript" },
+                { a: 100, b: 200, c: "javascript" },
+                { a: 100, b: 200, c: "javascript" },
+            ]
+
+            document.write("*** 50. 객체 불러오기 *** <br>");
+            const name1 = obj17.map(elem => elem.a);
+            document.write(name1,"<br>");
+
+            const name2 = obj17.map((el) => {
+                document.write(el.b,"<br>");
+                document.write(el.c,"<br>");
+            });
+            document.write("<br><br>");
+        }
+        //51. 객체 불러오기(펼침 연산자, 복사)
+        {
+            const obj18 = {
+                a: 100, 
+                b: 200, 
+                c: "javascript"
+            }
+            const spread = { ...obj18 };
+
+            document.write("*** 51. 객체 펼침 연산자 *** <br>");
+            document.write(spread.a, "<br>");
+            document.write(spread.b, "<br>");
+            document.write(spread.c, "<br><br><br>");
+        }
+        //52. 객체 불러오기(펼침 연산자, 추가)
+        {
+            const obj19 = {
+                a: 100, 
+                b: 200, 
+                c: "javascript"
+            }
+            const spread = { ...obj19, d: 'react' };
+
+            document.write("*** 52. 객체 불러오기 *** <br>");
+            document.write(spread.a, "<br>");
+            document.write(spread.b, "<br>");
+            document.write(spread.c, "<br>");
+            document.write(spread.d, "<br><br><br>");
+        }
+        //53. 객체 불러오기(펼침 연산자, 결합)
+        {
+            const obj20 = {
+                a: 100, 
+                b: 200
+            }
+            const obj21 = {
+                c: "javascript", 
+                d: "jquery"
+            }
+            const spread = { ...obj20, ...obj21 };
+
+            document.write("*** 53. 객체 불러오기 *** <br>");
+            document.write(spread.a, "<br>");
+            document.write(spread.b, "<br>");
+            document.write(spread.c, "<br>");
+            document.write(spread.d, "<br><br><br>");
+        }
+        //54. 조건문(if문)
+        {
+            //true, false, 1, 0, "", "a", null, undefined, [], {}
+            if(true){
+                document.write("*** 54. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(true).<br><br>");
+            } else {
+                document.write("*** 54. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(false).<br><br>");
+            }
+        }
+        //55. 조건문(다중 if문)
+        {
+            let num = 100; 
+            if(num == 10){
+                document.write("*** 55. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(1). <br><br>");
+            } else if(num == 100) {
+                document.write("*** 55. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(2). <br><br>");
+            } else if(num == 200) {
+                document.write("*** 55. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(3). <br><br>");
+            }
+        }
+        //56. 조건문(중첩 if문)
+        {
+            let num = 100; 
+            if(num == 100){
+                document.write("*** 56. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(1). <br>");
+                if(num == 100){
+                    document.write("조건문이 실행되었습니다(2). <br><br>");
+                }
+            } else {
+                document.write("*** 56. 조건문 *** <br>");
+                document.write("조건문이 실행되었습니다(3). <br><br>");
+            }
+        }
+        //57. 조건문(switch문)
+        {
+            let num = 100; 
+            switch(num){
+                case 100 :
+                    document.write("*** 57. 조건문 *** <br>");
+                    document.write("조건문이 실행되었습니다(1). <br><br>");
+                break;
+                case 200 :
+                    document.write("*** 57. 조건문 *** <br>");
+                    document.write("조건문이 실행되었습니다(2). <br><br>");
+                break;
+                default :
+                    document.write("*** 57. 조건문 *** <br>");
+                    document.write("조건문이 실행되었습니다(3). <br><br>");
+                break;
+            }
+        }
+        //58. 조건문(삼항 연산자)
+        {
+            let num = 100; 
+            // if(num == 100){
+            //     document.write("*** 58. 조건문 *** <br>");
+            //     document.write("조건문이 실행되었습니다(true).<br><br>");
+            // } else {
+            //     document.write("*** 58. 조건문 *** <br>");
+            //     document.write("조건문이 실행되었습니다(false).<br><br>");
+            // }
+            document.write("*** 58. 조건문 *** <br>");
+            (num == 100) ? document.write("true <br><br>") : document.write("false <br><br>")
+        }
+        //59. 반복문(while문)
+        {
+            document.write("*** 59. 반복문 *** <br>");
+
+            let num = 1;
+            while(num <= 10){
+                document.write(num + ". 실행되었습니다.<br>");  
+                num++;    
+            }
+
+            document.write("<br><br>");
+        }
+        //60. 반복문(do while문)
+        {
+            document.write("*** 60. 반복문 *** <br>");
+            
+            let num = 1;
+            do {
+                document.write(num + ". 실행되었습니다.<br>");
+                num++; 
+            } while (num < 10);
+
+            document.write("<br><br>");
+        }
+        //61. 반복문(for문)
+        {
+            document.write("*** 61. 반복문 *** <br>");
+            
+            for (let i=1; i<=10; i++){
+                document.write(i + ". 실행되었습니다.<br>");
+            }
+
+            document.write("<br><br>");
+        }
+        //62. 반복문(중첩 for문)
+        {
+            document.write("*** 62. 반복문 *** <br>");
+            
+            for(let i=1; i<=3; i++){
+                for(let j=1; j<=3; j++){
+                    document.write(i+","+j+". 실행되었습니다.", "<br>");
+                }
+            }
+
+            document.write("<br><br>");
+        }
+        // 함수
+        //63. 선언적 함수
+        function func1(){
+            document.write("*** 63. 선언적 함수 *** <br>");
+            document.write("func1이 실행되었습니다.<br><br>");
+        }
+        func1();
+        //64. 익명 함수
+        {
+            const func2 = function(){
+                document.write("*** 64. 익명 함수 *** <br>");
+                document.write("func2이 실행되었습니다.<br><br>");
+            }
+            func2();
+        }
+        //65. 매개변수가 있는 함수
+        {
+            function func3(name){
+                document.write("*** 65. 매개변수가 있는 함수 *** <br>");
+                document.write(name);
+            }
+            func3("func3이 실행되었습니다.<br><br>");
+        }
+        //66. 리턴값이 있는 함수
+        {
+            function func4(){
+                const str = "func4이 실행되었습니다.<br><br>";
+                return str;
+            }
+            //func4(); (x)
+            document.write("*** 66. 리턴값이 있는 함수 *** <br>");
+            document.write(func4());
+        }
+        //67. 재귀 함수 : 함수를 여러번 실행시킬 때(함수 정의문 내에서 다시 함수를 호출 시켜주는 함수)
+        {
+            // function func5(){
+            //     document.write("*** 46 재귀 함수 *** <br>");
+            //     //func5();
+            // }
+            
+            function func5(num){
+                if( num == 0 ){
+                    document.write("func5이 실행되었습니다.<br>");
+                } else {
+                    document.write("func5이 실행되었습니다.<br>");
+                    func5(num - 1);
+                }
+            }
+            document.write("*** 67. 재귀 함수 *** <br>");
+            func5(9);
+            document.write("<br><br>");
+        }
+        //68. 콜백 함수 : 함수를 실행시키고 난 뒤 또 함수를 실행시키고 싶을 때
+        {
+            function func6(){
+                document.write("func6이 실행되었습니다.<br><br>");
+            }
+            function callback(text){
+                text();
+            }
+
+            document.write("*** 68. 콜백 함수 *** <br>");
+            callback(func6);
+        }
+        //69. 콜백함수(반복)
+        {
+            function func7(){
+                document.write("func7이 실행되었습니다.<br>");
+            }
+            function callback(num){
+                for( let i=1; i<=10; i++ ){
+                    num(i);
+                }
+            }
+
+            document.write("*** 69. 콜백함수 *** <br>");
+            callback(func7);
+            document.write("<br><br>");
+        }
+        //70. 콜백함수(비동기/동기)
+        // {
+        //     function funA(){
+        //         document.write("funA가 실행되었습니다.<br>");
+        //     }
+        //     function funB(){
+        //         document.write("funB가 실행되었습니다.<br>");
+        //     }
+        //     funA();
+        //     funB();
+        // }
+        // {
+        //     function funA(){
+        //         setTimeout(function(){
+        //             document.write("funA가 실행되었습니다.<br>");
+        //         },1000);
+        //     }
+        //     function funB(){
+        //         document.write("funB가 실행되었습니다.<br>");
+        //     }
+        //     funA();
+        //     funB();
+        // }
+        // {
+        //     function funA(callback){
+        //         setTimeout(function(){
+        //             document.write("funA가 실행되었습니다.<br>");
+        //             callback();
+        //         },1000);
+        //     }
+        //     function funB(){
+        //         document.write("funB가 실행되었습니다.<br>");
+        //     }
+        //     funA(function(){
+        //         funB();
+        //     });
+        // }
+        //71. 즉시 실행 함수
+        {
+            // function func8(){
+            //     document.write("*** 49. 즉시 실행 함수 *** <br>");
+            //     document.write("func8이 실행되었습니다.");
+            // }
+            // func8();
+
+            (function(){
+                document.write("*** 71. 즉시 실행 함수 *** <br>");
+                document.write("func8이 실행되었습니다.<br><br>");
+            }());
+        }
+        //72. 함수(화살표 함수:선언적 함수)
+        {
+            // function func9(){
+            //     document.write("func9이 실행되었습니다.");
+            // }
+            // func9();
+
+            func9 = () => {
+                document.write("*** 72. 함수 *** <br>");
+                document.write("func9이 실행되었습니다.<br><br>");
+            }
+            func9();
+        }
+        //73. 함수(화살표 함수:익명 함수)
+        {
+            // const func10 = function(){
+            //     document.write("func10이 실행되었습니다.");
+            // }
+
+            const func10 = () => {
+                document.write("*** 73. 함수 *** <br>");
+                document.write("func10이 실행되었습니다.<br><br>");
+            }
+            func10();
+        }
+        //74. 함수(화살표 함수 : 리턴값이 있는 함수)
+        {
+            // function func11(){
+            //     const str = "func10이 실행되었습니다.<br><br>";
+            //     return str;
+            // }
+            // document.write(func11());
+
+            const func11 = () => {
+                const str = "func10이 실행되었습니다.<br><br>";
+                return str;
+            }
+
+            document.write("*** 74. 함수 *** <br>");
+            document.write(func11());
+        }
+        //75. 함수(화살표 함수 : 리턴값 + 매개변수)
+        {
+            const func12 = (str) => {
+                return str;
+            }
+
+            document.write("*** 75. 함수 *** <br>");
+            document.write(func12("func12이 실행되었습니다.<br><br>"));
+        }
+        //76. 함수(화살표 함수 : 리턴값 + 매개변수 생략)
+        {
+            const func13 = str => {
+                return str;
+            }
+            document.write("*** 76. 함수 *** <br>");
+            document.write(func13("func13이 실행되었습니다.<br><br>"));
+        }
+        //77. 함수(화살표 함수 : 리턴값 생략 + 매개변수 생략)
+        {
+            const func14 = str => str;
+            
+            document.write("*** 77. 함수 *** <br>");
+            document.write(func14("func14이 실행되었습니다.<br><br>"));
+        }
+        //78. 함수(파라미터 함수 Default Parameters)
+        {
+            // function func15(str){
+            //     if( str == null ){
+            //         str = "func15이 실행되었습니다.<br><br>";
+            //         document.write(str);
+            //     }
+            // }
+            function func15(str = "func15이 실행되었습니다.<br><br>"){
+                document.write(str);
+            }
+            document.write("*** 78. Default Parameters *** <br>");
+            func15();
+        }
+        //79. 함수(조건부 연산자 Ternary Operator)
+        {
+            var num = '';
+            function func16(){
+                // if(Ternary){
+                //     document.write("func16True이 실행되었습니다.<br><br>");
+                // } else {
+                //     document.write("func16False이 실행되었습니다.<br><br>");
+                // }
+                num ? document.write("True<br><br>") : document.write("False<br><br>");
+            }
+            document.write("*** 79. 조건부 연산자 함수(Ternary Operator) *** <br>");
+            func16();
+        }
+        //80. 템플릿 리터럴(Template Literals)
+        {
+            function func17(name){
+                document.write("1. " + name + "이 실행되었습니다.<br>");
+                document.write(`2. ${name}이 실행되었습니다.<br><br>`);
+            }
+            document.write("*** 80. 템플릿 리터럴(Template Literals) *** <br>");
+            func17("func17");
+        }
+        //81. 템플릿 리터럴(Template Literals)
+        {
+            const func18 = [
+                { name : "1. func18", result: "실행되었습니다." },
+                { name : "2. func18", result: "실행되었습니다." }
+            ]
+            const result = 
+                `${func18[0].name}가 ${func18[0].result}<br>
+                 ${func18[1].name}가 ${func18[1].result}`;
+            
+            document.write("*** 81. 템플릿 리터럴(Template Literals) *** <br>");
+            document.write(result,"<br><br>");
+        }
+        //82. 템플릿 리터럴(Template Literals)
+        {
+            const func19 = (str) => {
+                document.write(`${str}`);
+            }
+            document.write("*** 82. 템플릿 리터럴(Template Literals) *** <br>");
+            func19("func19이 실행되었습니다.<br><br>");
+        }
+        //83. 객체 + 함수(매개 변수로 출력하기)
+        {
+            function func20(num, name, job){
+                document.write(num + ". 내 이름은 " + name + "이며, 직업은 " + job + "입니다.<br>");
+            }
+
+            document.write("*** 83. 객체 + 함수 (매개 변수로 출력하기) *** <br>");
+            func20("1", "웹스", "웹 퍼블리셔");
+            func20("2", "웹스토리보이", "프론트앤드 개발자");
+            document.write("<br>");
+        }
+        //84. 객체 + 함수(변수로 출력하기)
+        {
+            function func21(num, name, job){
+                document.write(num + ". 내 이름은 " + name + "이며, 직업은 " + job + "입니다.<br>");
+            }
+
+            const youNum1 = "1";
+            const youName1 = "웹스";
+            const youJob1 = "웹 퍼블리셔";
+            const youNum2 = "2";
+            const youName2 = "웹스토리보이";
+            const youJob2 = "프론트앤드 개발자";
+
+            document.write("*** 84. 객체 + 함수(변수로 출력하기) *** <br>");
+            func21(youNum1, youName1, youJob1);
+            func21(youNum2, youName2, youJob2);
+            document.write("<br>");
+        }
+        //85. 객체 + 함수(객체로 출력하기)
+        {
+            function func22(num, name, job){
+                document.write(num + ". 내 이름은 " + name + "이며, 직업은 " + job + "입니다.<br>");
+            }
+            let info = [
+                {
+                    num: 1,
+                    name: "웹스",
+                    job: "웹 퍼블리셔"
+                },
+                {
+                    num: 2,
+                    name: "웹스토리보이",
+                    job: "프론트앤드 개발자"
+                }
+            ];
+            document.write("*** 85. 객체 + 함수(객체로 출력하기) *** <br>");
+            func22(info[0].num, info[0].name, info[0].job);
+            func22(info[1].num, info[1].name, info[1].job);
+            document.write("<br>");
+        }
+        //86. 객체 + 함수(변수)
+        {
+            const info = {
+                num1: 1,
+                name1: "웹스",
+                job1: "웹 퍼블리셔",
+                num2: 2,
+                name2: "웹스토리보이",
+                job2: "프로트앤드 개발자",
+
+                result1: function(){
+                    document.write(this.num1 + ". 내 이름은 " + this.name1 + "이며, 직업은 " + this.job1 + "입니다.<br>");
+                },
+                result2: function(){
+                    document.write(this.num2 + ". 내 이름은 " + this.name2 + "이며, 직업은 " + this.job2 + "입니다.<br>");
+                }
+            }
+            document.write("*** 86. 객체 + 함수(변수) *** <br>");
+            info.result1();
+            info.result2();
+            document.write("<br>");
+        }
+        //87. 객체 생성자 함수
+        {
+            function func23(num, name, job){
+                this.num = num;
+                this.name = name;
+                this.job = job;
+                this.result = function(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+                }
+            }
+
+            let info1 = new func23("1","웹스","웹스토리보이");
+            let info2 = new func23("2","웹스토리보이","프론트앤드 개발자");
+
+            document.write("*** 87. 객체 생성자 함수 *** <br>");
+            info1.result();
+            info2.result();
+            document.write("<br>");
+        }
+        //88. 프로토타입 메서드
+        {
+            function func24(num, name, job){
+                this.num = num;
+                this.name = name;
+                this.job = job;
+            }
+            func24.prototype.result = function(){
+                document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+            }
+
+            let info1 = new func24("1","웹스","웹스토리보이");
+            let info2 = new func24("2","웹스토리보이","프론트앤드 개발자");
+
+            document.write("*** 88. 프로토타입 메서드 *** <br>");
+            info1.result();
+            info2.result();
+            document.write("<br>");
+        }
+        //89. 객체 리터럴 함수
+        {
+            function func25(num, name, job){
+                this.num = num;
+                this.name = name;
+                this.job = job;
+            }
+
+            func25.prototype = {
+                result1 : function(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+                },
+                result2 : function(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+                }
+            }
+
+            let info1 = new func25("1","웹스","웹스토리보이");
+            let info2 = new func25("2","웹스토리보이","프론트앤드 개발자");
+
+            document.write("*** 89. 객체 리터럴 함수 *** <br>");
+            info1.result1();
+            info2.result2();
+            document.write("<br>");
+        }
+        //90. 클래스
+        {
+            class study {
+                constructor(num, name, job){
+                    this.num = num;
+                    this.name = name;
+                    this.job = job;
+                }
+                result(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+                }
+            }
+            let info1 = new study("1","웹스","웹스토리보이");
+            let info2 = new study("2","웹스토리보이","프론트앤드 개발자");
+
+            document.write("*** 90. 클래스 *** <br>");
+            info1.result();
+            info2.result();
+            document.write("<br>");
+        }
+        //91. 클래스 상속
+        {
+            class study {
+                constructor(num, name, job){
+                    this.num = num;
+                    this.name = name;
+                    this.job = job;
+                }
+                result(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "입니다.<br>");
+                }
+            }
+            class study2 extends study {
+                constructor(num, name, job, age){
+                    super(num, name, job);
+                    this.age = age;
+                }
+                result2(){
+                    document.write(this.num + ". 내 이름은 " + this.name + "이며, 직업은 " + this.job + "이며 나이는 "+ this.age+ "입니다.<br>");
+                }
+            }
+            let info1 = new study("1","웹스","웹스토리보이");
+            let info2 = new study2("2","웹스토리보이","프론트앤드 개발자","40");
+
+            document.write("*** 91. 클래스 상속 *** <br>");
+            info1.result();
+            info2.result();
+            info2.result2();
+        }
+       
     </script>
     
 </body>
