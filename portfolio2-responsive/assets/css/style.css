@@ -3,9 +3,9 @@
     position: fixed; 
     left: 0; top: 0; 
     width: 100%;
-    border-bottom: 1px solid var(--border-black);
-    background: var(--main-black);
-    color: var(--font-black);
+    border-bottom: 1px solid var(--border-dark);
+    background: var(--bg-dark);
+    color: var(--font-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
 #header .port em {
     width: 175px;
     height: 82px;
-    border-right: 1px solid var(--border-black);
+    border-right: 1px solid var(--border-dark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@
     bottom: 13px;
     width: 30px;
     height: 1px;
-    background: var(--font-black)
+    background: var(--font-dark)
 }
 #header .port em a::after {
     content: '';
@@ -47,7 +47,7 @@
     top: 12px;
     width: 30px;
     height: 1px;
-    background: var(--font-black)
+    background: var(--font-dark)
 }
 #header .logo {
     flex: 1 1 30%;
@@ -77,31 +77,31 @@
     line-height: 1;
 }
 #header.white {
-    background-color: var(--main-white);
-    border-bottom: 1px solid var(--border-white);
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-light);
 }
 #header.white .port em {
-    border-right: 1px solid var(--border-white);
+    border-right: 1px solid var(--border-light);
 }
 #header.white .port em a {
-    color: var(--font-white);
+    color: var(--font-light);
 }
 #header.white .logo a {
-    color: var(--font-white);
+    color: var(--font-light);
 }
 #header.white .nav li a {
-    color: var(--font-white);
+    color: var(--font-light);
 }
 #header.white .port em a::before {
-    background: var(--font-white);
+    background: var(--font-light);
 }
 #header.white .port em a::after {
-    background: var(--font-white);
+    background: var(--font-light);
 }
 
 /* mainCont */
 #mainCont {
-    background-color: var(--main-black);
+    background-color: var(--bg-dark);
     height: 100vh;
     color: var(--font-white);
     display: flex;
@@ -111,13 +111,18 @@
     padding-top: 82px;
 }
 .main-cont {
-    color: var(--font-black);
-    font-size: 11.250rem;
-    line-height: .75;
+    color: var(--font-dark);
 }
 .main-cont div {
     margin-bottom: 10px;
     font-family: var(--font-main);
     padding-top: 23px;
-    color: #000;
+}
+.main-title {
+    font-size: 11.250em;
+    line-height: .75;
+    letter-spacing: -.0275em;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
 }

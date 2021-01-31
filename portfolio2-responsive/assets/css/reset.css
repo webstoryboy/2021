@@ -44,7 +44,11 @@ ul,
 figure,
 figcaption { 
     margin:0; 
-    padding:0 
+    padding:0;
+    /* border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; */
 }
 
 /* 폰트 초기화 */

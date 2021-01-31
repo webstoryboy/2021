@@ -11,6 +11,8 @@
 /* 노트북 */
 @media (max-width: 1200px){
 
+    /* main */
+    .main-title {font-size: 8em;}
 }
 
 /* 타블렛 ipad pro */
@@ -20,9 +22,13 @@
     }
 
     /* header */
-    #header .nav {display: none}
-    #header .port {display: none}
+    #header {border-bottom: 0;}
+    #header .nav ul {display: none}
     #header .logo {margin: 1rem}
+    #header .port em {border-right: 0;}
+
+    /* main */
+    .main-title {font-size: 6em;}
 }
 
 /* 타블렛 ipad */
@@ -30,6 +36,28 @@
     :root {
         font-size: 12px;
     }
+    /* header */
+    #header .port {
+        position: fixed;
+        bottom: 0; left: 0;
+        width: 100%;
+        border-top: 1px solid var(--border-dark);
+    }
+    #header .port em {
+        width: auto;
+        height: auto;
+        margin: 1rem;
+    }
+    #header .logo {
+        width: 100%;
+        flex: 0 0 100%;
+        
+    }
+    #header {
+        border-bottom: 1px solid var(--border-dark);
+    }
+    /* main */
+    .main-title {font-size: 3em; line-height: .45;}
 }
 
 /* 핸드폰 iPhone */
@@ -42,6 +70,8 @@
     :root {
         font-size: 10px;
     }
+    /* main */
+    .main-title {font-size: 2em; line-height: .25;}
 }
 
 /* 핸드폰 Galaxy fold */
