@@ -1,35 +1,25 @@
 /* header */
 #header {
-    position: fixed; 
-    left: 0; top: 0; 
+    position: fixed;
+    left: 0; top: 0;
     width: 100%;
-    border-bottom: 1px solid var(--border-dark);
-    background: var(--bg-dark);
-    color: var(--font-dark);
+    background: #000;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-transform: capitalize;
-    z-index: 10000;
+    border-bottom: 1px solid var(--border-dark);
 }
 #header .port {
-    flex: 1 1 30%;
+    flex: 1 1 35%;
+    padding-left: 1rem;
 }
 #header .port em {
-    width: 175px;
-    height: 82px;
-    border-right: 1px solid var(--border-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 #header .port em a {
-    position: relative;
-    text-align: center;
-    font-family: var(--font-sub);
+    font-family: 'Rajdhani', 'Chosunilbo_myungjo';
+    text-transform: capitalize;
     padding: 10px 10px 10px 50px;
-    font-size: 16px;
-    line-height: 1;
 }
 #header .port em a::before {
     content: '';
@@ -44,7 +34,7 @@
     content: '';
     position: absolute;
     left: 10px; 
-    top: 12px;
+    top: 13px;
     width: 30px;
     height: 1px;
     background: var(--font-dark)
@@ -52,51 +42,36 @@
 #header .logo {
     flex: 1 1 30%;
     text-align: center;
+    margin: 1.5rem;
+    vertical-align: baseline;
+    font-family: 'Playfair Display';
 }
 #header .logo a {
-    font-family: var(--font-title);
-    font-size: 1.875rem;
-    padding: 3px 20px 5px 20px;
-    text-transform: lowercase;
-}
-#header .nav {
-    flex: 1 1 30%;
-    text-align: right;
-}
-#header .nav ul {
-    margin-right: 20px;
-}
-#header .nav li {
-    display: inline;
-}
-#header .nav li a {
-    display: inline-block;
-    padding: 8px 5px 5px 5px;
-    font-family: var(--font-sub), var(--font-kor);
-    font-size: 16px;
+    font-size: 2rem;
     line-height: 1;
 }
-#header.white {
-    background-color: var(--bg-light);
-    border-bottom: 1px solid var(--border-light);
+#header .nav {
+    flex: 1 1 35%;
+    text-align: right;
+    padding-right: 1rem;
 }
-#header.white .port em {
-    border-right: 1px solid var(--border-light);
+#header .nav ul {
 }
-#header.white .port em a {
-    color: var(--font-light);
+#header .nav li {
+    display: inline-block;
 }
-#header.white .logo a {
-    color: var(--font-light);
+#header .nav li a {
+    font-family: 'Rajdhani', 'Chosunilbo_myungjo';
+    padding: 3px;
 }
-#header.white .nav li a {
-    color: var(--font-light);
+#header .mNav {
+    display: none;
+    padding-right: 1rem;
 }
-#header.white .port em a::before {
-    background: var(--font-light);
-}
-#header.white .port em a::after {
-    background: var(--font-light);
+#header .mNav a {
+    font-family: 'Rajdhani', 'Chosunilbo_myungjo';
+    text-transform: capitalize;
+    padding: 10px 10px 10px 10px;
 }
 
 /* mainCont */
@@ -107,22 +82,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
-    padding-top: 82px;
+    padding-top: 5.125rem;
 }
 .main-cont {
     color: var(--font-dark);
 }
 .main-cont div {
-    margin-bottom: 10px;
     font-family: var(--font-main);
-    padding-top: 23px;
 }
+
+/* main-title 공통요소 */
 .main-title {
     font-size: 11.250em;
     line-height: .75;
     letter-spacing: -.0275em;
-    -webkit-hyphens: manual;
-    -ms-hyphens: manual;
-    hyphens: manual;
 }

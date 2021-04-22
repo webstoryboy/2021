@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {width: 100px; height: 100px; background: #000; margin: 10px;}
+    </style>
+</head>
+<body>
+    <div class="dd"><span>dd</span><span>dd</span></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        document.querySelector(".dd").lastChild.style.background = "red"
+        //$(".dd").first().css("background","red")
+    </script>
+</body>
+</html>
